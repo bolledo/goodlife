@@ -1,23 +1,31 @@
 /* ============================================
-   GOODLIFE — Design Tokens (provisional)
-   Actualizar con brand book cuando esté disponible
+   GOODLIFE — Design Tokens
+   Paleta oficial: Pantone 1505C + 7466C
    ============================================ */
 :root {
-  /* Colores principales */
-  --color-primary: #2A7D6F;
-  --color-primary-dark: #1F5C52;
-  --color-primary-light: #3DA090;
-  --color-accent: #5CB8A8;
+  /* Colores de marca */
+  --color-orange: #FF8B00;       /* Pantone 1505C — naranja */
+  --color-orange-dark: #D97500;
+  --color-orange-light: #FFB347;
+  --color-teal: #11BBBF;         /* Pantone 7466C — teal */
+  --color-teal-dark: #0E9EA2;
+  --color-teal-light: #3DCDD1;
+
+  /* Alias semánticos */
+  --color-primary: #11BBBF;
+  --color-primary-dark: #0E9EA2;
+  --color-primary-light: #3DCDD1;
+  --color-accent: #FF8B00;
 
   /* Neutros */
   --color-white: #FFFFFF;
-  --color-bg: #F8FAFA;
-  --color-bg-alt: #EEF5F4;
-  --color-text: #1A2E2B;
-  --color-text-muted: #5A7A75;
-  --color-border: #D5E8E5;
+  --color-bg: #F8F9FA;
+  --color-bg-alt: #EDF8F9;
+  --color-text: #1A1A1A;
+  --color-text-muted: #5A6170;
+  --color-border: #D0ECEE;
 
-  /* Tipografía (provisional — reemplazar con brand book) */
+  /* Tipografía */
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, sans-serif;
 
