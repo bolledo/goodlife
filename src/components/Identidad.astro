@@ -1,0 +1,123 @@
+---
+const stats = [
+  { num: "+14", label: "años de experiencia" },
+  { num: "9", label: "profesionales" },
+  { num: "13", label: "especialidades" },
+  { num: "6", label: "días a la semana" },
+];
+---
+
+<section id="nosotros" class="identidad">
+  <div class="container identidad-inner">
+
+    <div class="identidad-texto">
+      <span class="identidad-tag">Nuestro ADN</span>
+      <h2 class="section-title">No tratamos la lesión.<br/>Tratamos a la persona.</h2>
+      <p>
+        En Goodlife entendemos que cada paciente es único. Desde 2010 acompañamos
+        a nuestra comunidad en su camino hacia la recuperación, el deporte y el
+        autocuidado — con un enfoque integral que combina la mejor evidencia
+        científica con atención cercana y personalizada.
+      </p>
+      <p>
+        Nuestro equipo multidisciplinario trabaja de forma coordinada para ofrecerte
+        un tratamiento coherente, eficaz y centrado en tus objetivos.
+      </p>
+      <a href="#contacto" class="btn btn-primary" style="margin-top: 1.5rem;">Agenda tu evaluación</a>
+    </div>
+
+    <div class="identidad-stats">
+      {stats.map((s) => (
+        <div class="stat-block">
+          <span class="stat-num">{s.num}</span>
+          <span class="stat-label">{s.label}</span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .identidad {
+    background: var(--color-bg-alt);
+    padding: var(--section-padding);
+  }
+
+  .identidad-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .identidad-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+  }
+
+  .identidad-texto .section-title {
+    margin-bottom: 1.25rem;
+  }
+
+  .identidad-texto p {
+    color: var(--color-text-muted);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  .identidad-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .stat-block {
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    gap: 0.4rem;
+  }
+
+  .stat-num {
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .stat-label {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 900px) {
+    .identidad-inner {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .identidad-stats {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

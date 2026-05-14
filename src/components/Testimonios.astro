@@ -1,0 +1,157 @@
+---
+const testimonios = [
+  {
+    texto: "Llegué con una rotura de ligamento y a los 4 meses estaba corriendo de nuevo. El equipo es increíble, muy dedicados y profesionales.",
+    nombre: "Rodrigo M.",
+    detalle: "Lesión de rodilla",
+  },
+  {
+    texto: "Excelente atención, muy personalizada. Se nota que realmente les importa la recuperación del paciente y no solo cumplir con una rutina.",
+    nombre: "Fernanda S.",
+    detalle: "Rehabilitación post-quirúrgica",
+  },
+  {
+    texto: "Llevo dos años yendo al centro y siempre he recibido una atención de primer nivel. Los recomiendo sin dudarlo.",
+    nombre: "Carlos A.",
+    detalle: "Paciente de larga data",
+  },
+  {
+    texto: "Me atendieron a domicilio después de mi operación de cadera. Una comodidad enorme y la misma calidad que en el centro.",
+    nombre: "Elena R.",
+    detalle: "Kinesiología a domicilio",
+  },
+  {
+    texto: "El kinesiólogo deportivo me ayudó a volver a competir después de una fractura. Trabajo muy profesional y con mucha empatía.",
+    nombre: "Sebastián V.",
+    detalle: "Deportista amateur",
+  },
+  {
+    texto: "Tuve sesiones de fonoaudiología para mi hijo y los resultados fueron notables. Profesionales muy comprometidos.",
+    nombre: "Marcela T.",
+    detalle: "Fonoaudiología",
+  },
+];
+---
+
+<section class="testimonios">
+  <div class="container">
+
+    <div class="test-header">
+      <span class="test-tag">Testimonios</span>
+      <h2 class="section-title">Lo que dicen nuestros pacientes.</h2>
+    </div>
+
+    <div class="test-grid">
+      {testimonios.map((t) => (
+        <div class="test-card">
+          <div class="test-stars">
+            {"★★★★★"}
+          </div>
+          <p class="test-texto">"{t.texto}"</p>
+          <div class="test-autor">
+            <div class="test-avatar">{t.nombre.charAt(0)}</div>
+            <div>
+              <strong>{t.nombre}</strong>
+              <span>{t.detalle}</span>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .testimonios {
+    background: var(--color-bg-alt);
+    padding: var(--section-padding);
+  }
+
+  .test-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .test-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+  }
+
+  .test-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .test-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: box-shadow 0.2s;
+  }
+
+  .test-card:hover {
+    box-shadow: var(--shadow-md);
+  }
+
+  .test-stars {
+    color: #F5A623;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+
+  .test-texto {
+    font-size: 0.925rem;
+    color: var(--color-text);
+    line-height: 1.7;
+    flex: 1;
+    font-style: italic;
+  }
+
+  .test-autor {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .test-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+  }
+
+  .test-autor div {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .test-autor strong {
+    font-size: 0.875rem;
+    color: var(--color-text);
+  }
+
+  .test-autor span {
+    font-size: 0.775rem;
+    color: var(--color-text-muted);
+  }
+</style>
