@@ -1,93 +1,43 @@
 ---
 const equipo = [
-  {
-    area: "kinesio",
-    label: "Kinesiología",
-    nombre: "Kinesióloga Traumatológica",
-    especialidad: "Kinesiología Traumatológica",
-    descripcion: "Especializada en rehabilitación de lesiones musculoesqueléticas y recuperación post-quirúrgica.",
-    iniciales: "KT",
-  },
-  {
-    area: "kinesio",
-    label: "Kinesiología",
-    nombre: "Kinesiólogo Deportivo",
-    especialidad: "Kinesiología Deportiva & Reintegro",
-    descripcion: "Experto en tratamiento de lesiones deportivas y protocolos de retorno al deporte.",
-    iniciales: "KD",
-  },
-  {
-    area: "kinesio",
-    label: "Kinesiología",
-    nombre: "Kinesiólogo Domicilio",
-    especialidad: "Kinesiología a Domicilio",
-    descripcion: "Atención domiciliaria para pacientes con dificultades de traslado o en recuperación post-operatoria.",
-    iniciales: "KM",
-  },
-  {
-    area: "medico",
-    label: "Médico",
-    nombre: "Médico General",
-    especialidad: "Medicina & Rehab. Cardiometabólica",
-    descripcion: "Atención médica integral y coordinación del plan de tratamiento del paciente.",
-    iniciales: "MG",
-  },
-  {
-    area: "medico",
-    label: "Médico",
-    nombre: "Quiropráctico",
-    especialidad: "Quiropraxia",
-    descripcion: "Especialista en ajustes vertebrales y articulares para el alivio del dolor crónico.",
-    iniciales: "QP",
-  },
-  {
-    area: "bienestar",
-    label: "Bienestar",
-    nombre: "Nutricionista",
-    especialidad: "Nutrición",
-    descripcion: "Planes nutricionales personalizados orientados a salud, rendimiento y bienestar.",
-    iniciales: "NT",
-  },
-  {
-    area: "bienestar",
-    label: "Bienestar",
-    nombre: "Masoterapista",
-    especialidad: "Masoterapia & Bienestar",
-    descripcion: "Técnicas manuales terapéuticas para alivio del dolor, tensión y estrés.",
-    iniciales: "MT",
-  },
-  {
-    area: "rehabilitacion",
-    label: "Rehabilitación",
-    nombre: "Fonoaudióloga",
-    especialidad: "Fonoaudiología",
-    descripcion: "Evaluación y tratamiento de trastornos del habla, lenguaje, voz y deglución.",
-    iniciales: "FA",
-  },
-  {
-    area: "rehabilitacion",
-    label: "Rehabilitación",
-    nombre: "Terapeuta Ocupacional",
-    especialidad: "Terapia Ocupacional",
-    descripcion: "Apoyo en la recuperación de la independencia funcional en actividades cotidianas.",
-    iniciales: "TO",
-  },
-  {
-    area: "rehabilitacion",
-    label: "Rehabilitación",
-    nombre: "Psicólogo Clínico",
-    especialidad: "Psicología",
-    descripcion: "Acompañamiento psicológico para el bienestar emocional y la salud mental.",
-    iniciales: "PS",
-  },
+  // Kinesiología
+  { nombre: "Francisca Avila",      iniciales: "FA", especialidad: "Kinesióloga",                         area: "kinesio" },
+  { nombre: "Felipe Cachón",        iniciales: "FC", especialidad: "Kinesiólogo · Quiropráctico EPI",      area: "kinesio" },
+  { nombre: "Francisco Bladayoll",  iniciales: "FB", especialidad: "Kinesiólogo",                          area: "kinesio" },
+  { nombre: "Sebastián Varas",      iniciales: "SV", especialidad: "Kinesiólogo",                          area: "kinesio" },
+  { nombre: "Tomás Michael",        iniciales: "TM", especialidad: "Kinesiólogo",                          area: "kinesio" },
+  { nombre: "Paz Mesa",             iniciales: "PM", especialidad: "Kinesióloga",                          area: "kinesio" },
+  { nombre: "Orlando Dassonville",  iniciales: "OD", especialidad: "Kinesiólogo · Piso Pélvico",           area: "kinesio" },
+  { nombre: "Paulina Calderón",     iniciales: "PC", especialidad: "Kinesióloga · Piso Pélvico",           area: "kinesio" },
+  { nombre: "Juan Carlos Bravo",    iniciales: "JB", especialidad: "Kinesiólogo · Acupunturista",          area: "kinesio" },
+  { nombre: "Gonzalo Requena",      iniciales: "GR", especialidad: "Kinesiólogo · Quiropráctica",          area: "kinesio" },
+  { nombre: "Javiera Matus",        iniciales: "JM", especialidad: "Kinesióloga · Instructora Pilates",    area: "kinesio" },
+  // Médico
+  { nombre: "Jean Romagnolli",      iniciales: "JR", especialidad: "Médico Cirujano · Medicina Deportiva", area: "medico"  },
+  { nombre: "María Luisa Bravo",    iniciales: "ML", especialidad: "Médico Cirujano · Medicina Familiar",  area: "medico"  },
+  // Bienestar
+  { nombre: "Valentina Torres",     iniciales: "VT", especialidad: "Nutricionista",                        area: "bienestar" },
+  { nombre: "Francisca Garrido",    iniciales: "FG", especialidad: "Nutricionista",                        area: "bienestar" },
+  { nombre: "Gisselle Carbone",     iniciales: "GC", especialidad: "Masoterapueta",                        area: "bienestar" },
+  // Fitness
+  { nombre: "Etienne Ducret",       iniciales: "ED", especialidad: "Instructor Ninjutsu",                  area: "fitness" },
+  { nombre: "Marcela González",     iniciales: "MG", especialidad: "Instructora Pilates",                  area: "fitness" },
+  { nombre: "Yerson Morales",       iniciales: "YM", especialidad: "Instructor Zumba",                     area: "fitness" },
+  { nombre: "Claudio Tilleria",     iniciales: "CT", especialidad: "Preparador Físico · Masoterapueta",    area: "fitness" },
+  // Administración
+  { nombre: "Adriana Mafia",        iniciales: "AM", especialidad: "Recepcionista",                        area: "admin"   },
+  { nombre: "Alejandra Cornejo",    iniciales: "AC", especialidad: "Recepcionista",                        area: "admin"   },
+  { nombre: "Edith Meneses",        iniciales: "EM", especialidad: "Auxiliar",                             area: "admin"   },
+  { nombre: "William Veloso",       iniciales: "WV", especialidad: "Gerente General",                      area: "admin"   },
 ];
 
 const tabs = [
-  { id: "todos", label: "Todos" },
-  { id: "kinesio", label: "Kinesiología" },
-  { id: "medico", label: "Médico" },
-  { id: "rehabilitacion", label: "Rehabilitación" },
-  { id: "bienestar", label: "Bienestar" },
+  { id: "todos",     label: "Todos" },
+  { id: "kinesio",  label: "Kinesiología" },
+  { id: "medico",   label: "Médico" },
+  { id: "bienestar",label: "Bienestar" },
+  { id: "fitness",  label: "Fitness" },
+  { id: "admin",    label: "Administración" },
 ];
 ---
 
@@ -97,10 +47,10 @@ const tabs = [
     <div class="equipo-header">
       <div>
         <span class="equipo-tag">Nuestro equipo</span>
-        <h2 class="section-title">Profesionales comprometidos<br/>con tu recuperación.</h2>
+        <h2 class="section-title">Un equipo que acompañará<br/>cada uno de tus desafíos.</h2>
       </div>
       <p class="section-subtitle">
-        Un equipo multidisciplinario que trabaja de forma coordinada para ofrecerte
+        Profesionales comprometidos que trabajan de forma coordinada para ofrecerte
         la mejor atención en cada etapa de tu tratamiento.
       </p>
     </div>
@@ -108,34 +58,24 @@ const tabs = [
     <!-- Tabs de filtro -->
     <div class="equipo-tabs" role="tablist">
       {tabs.map((t) => (
-        <button
-          role="tab"
-          class={`tab-btn ${t.id === 'todos' ? 'active' : ''}`}
-          data-filter={t.id}
-        >
+        <button role="tab" class={`tab-btn ${t.id === 'todos' ? 'active' : ''}`} data-filter={t.id}>
           {t.label}
         </button>
       ))}
     </div>
 
+    <!-- Grid de equipo -->
     <div class="equipo-grid" id="equipo-grid">
       {equipo.map((p) => (
         <div class="profesional-card" data-area={p.area}>
-          <div class="profesional-avatar">
-            <span class="profesional-iniciales">{p.iniciales}</span>
+          <div class="prof-avatar">
+            <span class="prof-iniciales">{p.iniciales}</span>
           </div>
-          <div class="profesional-info">
-            <span class="profesional-area">{p.label}</span>
-            <span class="profesional-especialidad">{p.especialidad}</span>
-            <p class="profesional-desc">{p.descripcion}</p>
-          </div>
+          <p class="prof-nombre">{p.nombre}</p>
+          <p class="prof-especialidad">{p.especialidad}</p>
         </div>
       ))}
     </div>
-
-    <p class="equipo-note">
-      * Los perfiles y fotos del equipo serán actualizados con información real próximamente.
-    </p>
 
   </div>
 </section>
@@ -147,17 +87,11 @@ const tabs = [
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
       const filter = tab.getAttribute('data-filter');
-
       tabs.forEach(t => t.classList.remove('active'));
       tab.classList.add('active');
-
       cards.forEach(card => {
-        const area = card.getAttribute('data-area');
-        if (filter === 'todos' || area === filter) {
-          (card as HTMLElement).style.display = 'flex';
-        } else {
-          (card as HTMLElement).style.display = 'none';
-        }
+        const show = filter === 'todos' || card.getAttribute('data-area') === filter;
+        (card as HTMLElement).style.display = show ? 'flex' : 'none';
       });
     });
   });
@@ -187,22 +121,17 @@ const tabs = [
     margin-bottom: 0.75rem;
   }
 
-  .equipo-header .section-subtitle {
-    line-height: 1.75;
-  }
-
   /* Tabs */
   .equipo-tabs {
     display: flex;
-    gap: 0.5rem;
+    gap: 0;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     border-bottom: 1px solid var(--color-border);
-    padding-bottom: 0;
   }
 
   .tab-btn {
-    padding: 0.6rem 1.25rem;
+    padding: 0.65rem 1.25rem;
     border: none;
     background: none;
     font-size: 0.875rem;
@@ -212,7 +141,7 @@ const tabs = [
     border-bottom: 2px solid transparent;
     margin-bottom: -1px;
     transition: color 0.2s, border-color 0.2s;
-    border-radius: 0;
+    font-family: var(--font-body);
   }
 
   .tab-btn:hover { color: var(--color-primary); }
@@ -225,83 +154,85 @@ const tabs = [
   /* Grid */
   .equipo-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 1.75rem 1.25rem;
   }
 
   .profesional-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: 1.5rem;
     display: flex;
-    gap: 1.25rem;
-    align-items: flex-start;
-    transition: box-shadow 0.2s, transform 0.2s;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    cursor: default;
+    transition: transform 0.2s;
   }
 
-  .profesional-card:hover {
-    box-shadow: var(--shadow-md);
-    transform: translateY(-2px);
-  }
+  .profesional-card:hover { transform: translateY(-3px); }
 
-  .profesional-avatar {
-    width: 52px;
-    height: 52px;
+  /* Avatar circular */
+  .prof-avatar {
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-teal-dark) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    border: 3px solid var(--color-white);
+    box-shadow: 0 4px 16px rgba(17,187,191,0.2);
+    transition: box-shadow 0.2s;
   }
 
-  .profesional-iniciales {
+  .profesional-card:hover .prof-avatar {
+    box-shadow: 0 6px 24px rgba(17,187,191,0.35);
+  }
+
+  /* Diferentes colores por área */
+  .profesional-card[data-area="medico"] .prof-avatar {
+    background: linear-gradient(135deg, #1A6FA8 0%, #0E9EA2 100%);
+  }
+
+  .profesional-card[data-area="bienestar"] .prof-avatar {
+    background: linear-gradient(135deg, #2E9C5E 0%, #11BBBF 100%);
+  }
+
+  .profesional-card[data-area="fitness"] .prof-avatar {
+    background: linear-gradient(135deg, var(--color-accent) 0%, #D97500 100%);
+  }
+
+  .profesional-card[data-area="admin"] .prof-avatar {
+    background: linear-gradient(135deg, #5A6170 0%, #3D4451 100%);
+  }
+
+  .prof-iniciales {
     color: var(--color-white);
-    font-weight: 700;
-    font-size: 0.9rem;
+    font-weight: 800;
+    font-size: 1rem;
     letter-spacing: 0.04em;
   }
 
-  .profesional-info {
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .profesional-area {
-    font-size: 0.7rem;
+  .prof-nombre {
+    font-size: 0.875rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
     color: var(--color-accent);
+    line-height: 1.3;
   }
 
-  .profesional-especialidad {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--color-text);
-  }
-
-  .profesional-desc {
-    font-size: 0.825rem;
+  .prof-especialidad {
+    font-size: 0.75rem;
     color: var(--color-text-muted);
-    line-height: 1.55;
-    margin-top: 0.1rem;
+    line-height: 1.4;
   }
 
-  .equipo-note {
-    margin-top: 2rem;
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
-    font-style: italic;
-    text-align: center;
+  @media (max-width: 900px) {
+    .equipo-header { grid-template-columns: 1fr; gap: 1.25rem; }
   }
 
-  @media (max-width: 768px) {
-    .equipo-header {
-      grid-template-columns: 1fr;
-      gap: 1.25rem;
-    }
+  @media (max-width: 600px) {
+    .equipo-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 1.5rem 1rem; }
+    .prof-avatar { width: 72px; height: 72px; }
+    .prof-iniciales { font-size: 0.875rem; }
   }
 </style>
