@@ -1,78 +1,82 @@
 ---
-const servicios = [
+const serviciosSalud = [
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.5 12.75l6 6 9-13.5"/></svg>`,
     nombre: "Kinesiología Traumatológica",
     desc: "Recuperación de lesiones musculares, articulares y post-quirúrgicas con técnicas actualizadas.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
     nombre: "Kinesiología Deportiva",
     desc: "Tratamiento especializado para deportistas. Desde la lesión hasta el regreso al deporte.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>`,
     nombre: "Reintegro Deportivo",
     desc: "Protocolo progresivo y seguro para volver a la actividad física tras una lesión.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 11.5V14m0-2.5V6a1.5 1.5 0 113 0m-3 5.5a1.5 1.5 0 00-3 0V14m6-5a1.5 1.5 0 00-3 0m3 0a1.5 1.5 0 013 0v.5m0 0V14a1.5 1.5 0 01-3 0m3-5.5a1.5 1.5 0 00-1.5 1.5"/></svg>`,
     nombre: "Masoterapia",
     desc: "Técnicas manuales para alivio de tensiones, dolor muscular y mejora de la circulación.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
     nombre: "Quiropraxia",
     desc: "Ajustes vertebrales y articulares para alivio del dolor y mejora de la movilidad.",
-    href: "#contacto",
-  },
-  {
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>`,
-    nombre: "Rehab. Cardiometabólica",
-    desc: "Programas supervisados para pacientes con enfermedades cardiovasculares y metabólicas.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>`,
     nombre: "Kinesiología a Domicilio",
     desc: "Atención en tu hogar para mayor comodidad cuando el traslado es difícil.",
-    href: "#contacto",
-  },
-  {
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>`,
-    nombre: "Fonoaudiología",
-    desc: "Evaluación y tratamiento de trastornos del habla, voz, lenguaje y deglución.",
-    href: "#contacto",
-  },
-  {
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
-    nombre: "Terapia Ocupacional",
-    desc: "Apoyo para recuperar independencia en actividades cotidianas tras una lesión o enfermedad.",
-    href: "#contacto",
-  },
-  {
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M6 20v-2a6 6 0 0112 0v2"/></svg>`,
-    nombre: "Psicología",
-    desc: "Acompañamiento psicológico para el bienestar emocional y mental.",
-    href: "#contacto",
   },
   {
     icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>`,
     nombre: "Nutrición",
     desc: "Planes nutricionales personalizados para mejorar tu salud y rendimiento.",
-    href: "#contacto",
   },
   {
-    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3l14 9-14 9V3z"/></svg>`,
-    nombre: "Bienestar y Belleza",
-    desc: "Tratamientos estéticos y de bienestar para cuidar tu cuerpo de forma integral.",
-    href: "#contacto",
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 6v4m0 0c0 2.5-2 4-4 6m4-6c0 2.5 2 4 4 6M8 20h8M12 2a2 2 0 012 2v2"/><circle cx="12" cy="10" r="1"/></svg>`,
+    nombre: "Kinesiología Respiratoria",
+    desc: "Tratamiento de patologías respiratorias mediante técnicas de higiene bronquial y rehabilitación pulmonar.",
+  },
+  {
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2v-4M9 21H5a2 2 0 01-2-2v-4m0 0h18"/></svg>`,
+    nombre: "EPI",
+    desc: "Estimulación Propioceptiva Integradora para el tratamiento del dolor crónico y la recuperación neuromuscular.",
+  },
+  {
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>`,
+    nombre: "Medicina Familiar",
+    desc: "Atención médica integral para toda la familia, con foco en prevención y seguimiento de salud general.",
+  },
+  {
+    icon: `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>`,
+    nombre: "Medicina Deportiva",
+    desc: "Evaluación, diagnóstico y tratamiento médico especializado para deportistas de todos los niveles.",
   },
 ];
+
+const diferenciadoresGimnasio = [
+  "Entrenamiento semipersonalizado (máximo 5 personas por profesional)",
+  "Entrenarás con un Kinesiólogo",
+  "Medición de composición corporal con InBody",
+  "Seguimiento periódico de resultados (objetivables)",
+  "Evaluación de fuerza y resistencia funcional",
+  "Planificación individualizada según tus objetivos",
+];
+
+const objetivosGimnasio = [
+  "Bajar porcentaje de grasa",
+  "Aumentar masa muscular",
+  "Mejorar tu condición física",
+  "Recuperarte de una lesión",
+  "Prevenir molestias musculoesqueléticas",
+  "Mejorar tu rendimiento deportivo",
+  "Mantener un estilo de vida saludable",
+];
+
+const complementariosGimnasio = ["Quiropraxia", "Masoterapia", "Nutrición"];
 ---
 
 <section id="servicios" class="servicios">
@@ -91,24 +95,286 @@ const servicios = [
       </div>
     </div>
 
-    <div class="servicios-grid">
-      {servicios.map((s) => (
-        <a href={s.href} class="servicio-card">
-          <div class="servicio-icon" set:html={s.icon} />
-          <div class="servicio-body">
-            <h3 class="servicio-nombre">{s.nombre}</h3>
-            <p class="servicio-desc">{s.desc}</p>
+    <!-- Tabs de área -->
+    <div class="area-tabs" role="tablist">
+      <button class="area-tab active" data-area="salud" role="tab">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        Salud
+      </button>
+      <button class="area-tab" data-area="gimnasio" role="tab">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.5 6.5h11M6.5 17.5h11M3 12h18M7 8.5V6a1 1 0 011-1h1a1 1 0 011 1v11a1 1 0 01-1 1H8a1 1 0 01-1-1v-2.5M17 8.5V6a1 1 0 00-1-1h-1a1 1 0 00-1 1v11a1 1 0 001 1h1a1 1 0 001-1v-2.5"/></svg>
+        Gimnasio
+      </button>
+      <button class="area-tab" data-area="fitness" role="tab">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Espacio Fitness
+        <span class="nuevo-badge">NUEVO</span>
+      </button>
+    </div>
+
+    <!-- Panel: Salud -->
+    <div class="area-panel" id="panel-salud">
+      <div class="servicios-grid">
+        {serviciosSalud.map((s) => (
+          <a href="#contacto" class="servicio-card">
+            <div class="servicio-icon" set:html={s.icon} />
+            <div class="servicio-body">
+              <h3 class="servicio-nombre">{s.nombre}</h3>
+              <p class="servicio-desc">{s.desc}</p>
+            </div>
+            <span class="servicio-link">
+              Consultar
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Panel: Gimnasio -->
+    <div class="area-panel hidden" id="panel-gimnasio">
+      <div class="gimnasio-layout">
+
+        <div class="gimnasio-hero">
+          <span class="gimnasio-badge">Gimnasio Goodlife</span>
+          <h3 class="gimnasio-titulo">Un plan a tu medida<br/>con resultados medibles</h3>
+          <p class="gimnasio-desc">
+            En nuestro gimnasio, creemos que entrenar no se trata solo de hacer ejercicio,
+            sino de mejorar tu salud, prevenir lesiones y alcanzar objetivos reales mediante
+            una planificación basada en evidencia.
+          </p>
+          <p class="gimnasio-desc">
+            Somos un centro especializado en rehabilitación y entrenamiento con una atención
+            integral para personas de todas las edades y niveles de condición física.
+          </p>
+          <a href="https://wa.me/56939489688?text=Hola%2C%20quisiera%20reservar%20mi%20clase%20de%20prueba%20gratuita%20en%20Gimnasio%20Goodlife"
+             target="_blank" rel="noopener" class="btn-gimnasio">
+            Reservar clase de prueba gratuita
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="gimnasio-cards">
+
+          <div class="gimnasio-card">
+            <h4 class="gimnasio-card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              ¿Qué nos diferencia?
+            </h4>
+            <ul class="gimnasio-list">
+              {diferenciadoresGimnasio.map((d) => (
+                <li>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>
+                  {d}
+                </li>
+              ))}
+            </ul>
           </div>
-          <span class="servicio-link">
-            Consultar
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </span>
-        </a>
-      ))}
+
+          <div class="gimnasio-card">
+            <h4 class="gimnasio-card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              Nuestro enfoque
+            </h4>
+            <p class="gimnasio-enfoque-desc">Programa adaptado a tus necesidades, ya sea que busques:</p>
+            <ul class="gimnasio-list gimnasio-list--dot">
+              {objetivosGimnasio.map((o) => (
+                <li>{o}</li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="gimnasio-card gimnasio-card--accent">
+            <h4 class="gimnasio-card-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+              Servicios complementarios incluidos
+            </h4>
+            <p class="gimnasio-enfoque-desc">Con nuestros planes accedes a:</p>
+            <div class="complementarios">
+              {complementariosGimnasio.map((c) => (
+                <span class="comp-tag">{c}</span>
+              ))}
+            </div>
+            <p class="complementarios-note">Todo en un mismo lugar y con profesionales de la salud trabajando de forma integrada.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Panel: Espacio Fitness -->
+    <div class="area-panel hidden" id="panel-fitness">
+
+      <!-- Header -->
+      <div class="ef-header">
+        <div class="ef-header-left">
+          <span class="ef-nuevo">NUEVO</span>
+          <h3 class="ef-titulo">Espacio <em>Fitness</em></h3>
+          <p class="ef-lema">salud sin excusas</p>
+        </div>
+        <div class="ef-disciplines">
+          <span class="ef-disc">Zumba</span>
+          <span class="ef-disc">HIT</span>
+          <span class="ef-disc">Pilates</span>
+          <span class="ef-disc">Ninjutsu</span>
+          <span class="ef-disc">Hipopresivo</span>
+        </div>
+      </div>
+
+      <!-- Horario -->
+      <div class="ef-block">
+        <h4 class="ef-block-title">Horario de clases</h4>
+        <div class="ef-table-wrap">
+          <table class="ef-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sábado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="ef-period">AM</td>
+                <td><strong>PILATES</strong><br/>Javiera Matus<br/>8:15 hs</td>
+                <td></td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>8:15 hs</td>
+                <td><strong>PILATES</strong><br/>Javiera Matus<br/>8:15 hs</td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>8:15 hs</td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>10:00 hs</td>
+              </tr>
+              <tr>
+                <td class="ef-period"></td>
+                <td><strong>NINJUTSU</strong><br/>Elienne Ducret<br/>16:30 hs</td>
+                <td></td>
+                <td><strong>NINJUTSU</strong><br/>Elienne Ducret<br/>16:30 hs</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ef-period"></td>
+                <td><strong>HIPOPRESIVO</strong><br/>Paulina Calderón<br/>18:00 hs</td>
+                <td></td>
+                <td></td>
+                <td><strong>HIPOPRESIVO</strong><br/>Paulina Calderón<br/>18:00 hs</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ef-period">PM</td>
+                <td></td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>17:45 hs</td>
+                <td></td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>17:45 hs</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ef-period"></td>
+                <td></td>
+                <td><strong>PILATES</strong><br/>Marcela González<br/>19:00 hs</td>
+                <td></td>
+                <td><strong>PILATES</strong><br/>Marcela González<br/>19:00 hs</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ef-period"></td>
+                <td><strong>HIT</strong><br/>Claudio Tilleria<br/>20:00 hs</td>
+                <td><strong>PILATES</strong><br/>Marcela González<br/>20:00 hs</td>
+                <td><strong>HIT</strong><br/>Claudio Tilleria<br/>20:00 hs</td>
+                <td><strong>PILATES</strong><br/>Marcela González<br/>20:00 hs</td>
+                <td><strong>HIT</strong><br/>Claudio Tilleria<br/>20:00 hs</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ef-period"></td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>20:45 hs</td>
+                <td></td>
+                <td><strong>ZUMBA</strong><br/>Yer Esteban<br/>20:45 hs</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Planes + Promos -->
+      <div class="ef-bottom">
+
+        <div class="ef-planes">
+          <h4 class="ef-block-title">Precios de lanzamiento</h4>
+          <div class="ef-table-wrap">
+            <table class="ef-table ef-table--planes">
+              <thead>
+                <tr>
+                  <th>Disciplina</th>
+                  <th>Plan Mensual 8</th>
+                  <th>Plan Trimestral 8</th>
+                  <th>Plan Semestral 8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Zumba</td><td>$40.000</td><td>$114.000</td><td>$216.000</td></tr>
+                <tr><td>Pilates Piso</td><td>$64.000</td><td>$182.000</td><td>$346.000</td></tr>
+                <tr><td>Artes Marciales</td><td>$48.000</td><td>$137.000</td><td>$259.000</td></tr>
+                <tr><td>HIT</td><td>$64.000</td><td>$182.000</td><td>$346.000</td></tr>
+                <tr><td>Hipopresivo</td><td>$64.000</td><td>$182.000</td><td>$346.000</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="ef-nota">Promociones válidas hasta el 30 de septiembre de 2026 o hasta agotar cupo máximo de clase. No acumulable con otras promociones.</p>
+        </div>
+
+        <div class="ef-promos">
+          <div class="ef-promo ef-promo--orange">
+            <span class="ef-promo-pct">50%</span>
+            <span class="ef-promo-label">DESCUENTO<br/>PRIMER MES</span>
+          </div>
+          <div class="ef-promo ef-promo--teal">
+            <span class="ef-promo-gratis">GRATIS</span>
+            <span class="ef-promo-label">CLASE DE PRUEBA</span>
+          </div>
+          <div class="ef-promo ef-promo--dark">
+            <span class="ef-promo-inbody">INBODY 270<br/>GRATIS</span>
+            <span class="ef-promo-label">Primer examen en planes trimestrales o superior</span>
+          </div>
+          <a href="https://wa.me/56939489688?text=Hola%2C%20quisiera%20reservar%20mi%20clase%20gratuita%20en%20Espacio%20Fitness"
+             target="_blank" rel="noopener" class="btn-gimnasio ef-cta">
+            Reservar clase gratuita
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
     </div>
 
   </div>
 </section>
+
+<script>
+  const tabs = document.querySelectorAll('.area-tab:not([disabled])');
+  const panels = document.querySelectorAll('.area-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const area = tab.getAttribute('data-area');
+
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      panels.forEach(p => p.classList.add('hidden'));
+      document.getElementById(`panel-${area}`)?.classList.remove('hidden');
+    });
+  });
+</script>
 
 <style>
   .servicios {
@@ -121,7 +387,7 @@ const servicios = [
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: end;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid var(--color-border);
   }
@@ -145,6 +411,61 @@ const servicios = [
     padding-left: 1.25rem;
   }
 
+  /* Area tabs */
+  .area-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .area-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.65rem 1.25rem;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: var(--font-body);
+  }
+
+  .area-tab:hover:not([disabled]) {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+
+  .area-tab.active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .area-tab--soon {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .soon-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: var(--color-bg-alt);
+    color: var(--color-text-muted);
+    padding: 0.2rem 0.5rem;
+    border-radius: 100px;
+    margin-left: 0.25rem;
+  }
+
+  .hidden { display: none; }
+
+  /* ---- Panel Salud ---- */
   .servicios-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -165,20 +486,10 @@ const servicios = [
     cursor: pointer;
   }
 
-  .servicio-card:hover {
-    background: var(--color-bg);
-  }
+  .servicio-card:hover { background: var(--color-bg); }
+  .servicio-card:hover .servicio-link { color: var(--color-primary-dark); gap: 0.5rem; }
 
-  .servicio-card:hover .servicio-link {
-    color: var(--color-primary-dark);
-    gap: 0.5rem;
-  }
-
-  .servicio-icon {
-    color: var(--color-primary);
-    margin-bottom: 0.25rem;
-  }
-
+  .servicio-icon { color: var(--color-primary); margin-bottom: 0.25rem; }
   .servicio-body { flex: 1; }
 
   .servicio-nombre {
@@ -208,10 +519,457 @@ const servicios = [
     transition: gap 0.2s, color 0.2s;
   }
 
-  @media (max-width: 768px) {
-    .servicios-intro {
+  /* ---- Panel Gimnasio ---- */
+  .gimnasio-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .gimnasio-hero {
+    background: linear-gradient(160deg, #0D1F2D 0%, #0A2A2B 100%);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    color: var(--color-white);
+    position: sticky;
+    top: 80px;
+  }
+
+  .gimnasio-badge {
+    display: inline-block;
+    background: rgba(255,139,0,0.2);
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    margin-bottom: 1.25rem;
+    border: 1px solid rgba(255,139,0,0.3);
+  }
+
+  .gimnasio-titulo {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    color: var(--color-white);
+  }
+
+  .gimnasio-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.75);
+    margin-bottom: 0.75rem;
+  }
+
+  .btn-gimnasio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: var(--color-accent);
+    color: var(--color-white);
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--radius-sm);
+    margin-top: 1.5rem;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-gimnasio:hover {
+    background: var(--color-orange-dark);
+    transform: translateY(-1px);
+  }
+
+  .gimnasio-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .gimnasio-card {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+  }
+
+  .gimnasio-card--accent {
+    background: var(--color-bg-alt);
+    border-color: var(--color-primary);
+  }
+
+  .gimnasio-card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+
+  .gimnasio-card-title svg { color: var(--color-primary); flex-shrink: 0; }
+  .gimnasio-card--accent .gimnasio-card-title svg { color: var(--color-accent); }
+
+  .gimnasio-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .gimnasio-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+
+  .gimnasio-list li svg { color: var(--color-primary); flex-shrink: 0; margin-top: 2px; }
+
+  .gimnasio-list--dot li {
+    padding-left: 1rem;
+    position: relative;
+  }
+
+  .gimnasio-list--dot li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-size: 0.5rem;
+    top: 0.4rem;
+  }
+
+  .gimnasio-enfoque-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .complementarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .comp-tag {
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.85rem;
+    border-radius: 100px;
+  }
+
+  .complementarios-note {
+    font-size: 0.825rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ---- Panel Próximamente ---- */
+  .soon-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem 2rem;
+    text-align: center;
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    border: 2px dashed var(--color-border);
+    color: var(--color-text-muted);
+  }
+
+  .soon-panel svg { color: var(--color-primary); opacity: 0.4; }
+  .soon-panel h3 { font-size: 1.5rem; color: var(--color-text); }
+  .soon-panel p { max-width: 400px; font-size: 0.95rem; line-height: 1.6; }
+
+  @media (max-width: 900px) {
+    .gimnasio-layout {
       grid-template-columns: 1fr;
-      gap: 1.5rem;
     }
+    .gimnasio-hero { position: static; }
+  }
+
+  @media (max-width: 768px) {
+    .servicios-intro { grid-template-columns: 1fr; gap: 1.5rem; }
+    .area-tabs { gap: 0.4rem; }
+    .area-tab { font-size: 0.825rem; padding: 0.55rem 1rem; }
+  }
+
+  /* ---- Nuevo badge en tab ---- */
+  .nuevo-badge {
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 0.2rem 0.5rem;
+    border-radius: 100px;
+    margin-left: 0.25rem;
+  }
+
+  .area-tab.active .nuevo-badge {
+    background: rgba(255,255,255,0.25);
+    color: var(--color-white);
+  }
+
+  /* ---- Panel Espacio Fitness ---- */
+  .ef-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: linear-gradient(135deg, #0D1F2D 0%, #0A2A2B 100%);
+    border-radius: var(--radius-lg);
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .ef-nuevo {
+    display: inline-block;
+    background: var(--color-accent);
+    color: var(--color-white);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    margin-bottom: 0.6rem;
+  }
+
+  .ef-titulo {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: var(--color-white);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .ef-titulo em {
+    font-style: italic;
+    color: var(--color-accent);
+    font-weight: 400;
+    text-transform: none;
+    font-size: 1.1em;
+  }
+
+  .ef-lema {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    font-style: italic;
+  }
+
+  .ef-disciplines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .ef-disc {
+    background: rgba(17,187,191,0.2);
+    border: 1px solid rgba(17,187,191,0.4);
+    color: var(--color-primary-light);
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0.35rem 0.9rem;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .ef-block {
+    margin-bottom: 2rem;
+  }
+
+  .ef-block-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .ef-block-title::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: var(--color-primary);
+    border-radius: 2px;
+  }
+
+  .ef-table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+  }
+
+  .ef-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    min-width: 600px;
+  }
+
+  .ef-table thead tr {
+    background: var(--color-text);
+    color: var(--color-white);
+  }
+
+  .ef-table th {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .ef-table th:first-child { text-align: left; }
+
+  .ef-table td {
+    padding: 0.65rem 1rem;
+    text-align: center;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-border);
+    line-height: 1.4;
+    color: var(--color-text);
+  }
+
+  .ef-table td:first-child { text-align: left; }
+
+  .ef-table strong {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--color-primary-dark);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .ef-period {
+    font-weight: 800;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    background: var(--color-bg);
+  }
+
+  .ef-table tbody tr:last-child td { border-bottom: none; }
+  .ef-table tbody tr:hover td { background: var(--color-bg-alt); }
+
+  .ef-table--planes th:first-child,
+  .ef-table--planes td:first-child {
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .ef-table--planes td { font-weight: 600; color: var(--color-text); }
+
+  /* Bottom row: planes + promos */
+  .ef-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .ef-nota {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: 0.75rem;
+    line-height: 1.5;
+  }
+
+  .ef-promos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    min-width: 200px;
+  }
+
+  .ef-promo {
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .ef-promo--orange { background: var(--color-accent); color: var(--color-white); }
+  .ef-promo--teal { background: var(--color-primary); color: var(--color-white); }
+  .ef-promo--dark { background: var(--color-text); color: var(--color-white); }
+
+  .ef-promo-pct {
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .ef-promo-gratis {
+    font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1;
+    flex-shrink: 0;
+    text-transform: uppercase;
+  }
+
+  .ef-promo-inbody {
+    font-size: 0.85rem;
+    font-weight: 800;
+    line-height: 1.3;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+
+  .ef-promo-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+  }
+
+  .ef-cta {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.25rem;
+  }
+
+  @media (max-width: 900px) {
+    .ef-bottom { grid-template-columns: 1fr; }
+    .ef-promos { flex-direction: row; flex-wrap: wrap; }
+    .ef-promo { flex: 1; min-width: 140px; }
+    .ef-cta { flex: 100%; }
+  }
+
+  @media (max-width: 600px) {
+    .ef-header { flex-direction: column; padding: 1.5rem; }
+    .ef-promos { flex-direction: column; }
   }
 </style>
